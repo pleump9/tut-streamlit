@@ -10,4 +10,4 @@ pip3 install
 which python3
 which pip3
 
-streamlit main.py
+streamlit run main.py
