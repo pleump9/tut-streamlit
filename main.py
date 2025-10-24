@@ -33,3 +33,6 @@ st.markdown("---")
 table = pd.DataFrame({"Column A": [1, 2, 3], "Column B": ["A", "B", "C"]})
 st.table(table)
 st.dataframe(table)
+
+st.markdown("---")
+st.image("assets/cat.webp")
