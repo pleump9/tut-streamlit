@@ -1,0 +1,10 @@
+python3 -m venv venv
+
+source venv/bin/activate
+deactivate
+
+pip3 freeze > requirements.txt
+pip3 install
+
+which python3
+which pip3
