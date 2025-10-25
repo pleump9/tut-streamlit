@@ -36,3 +36,32 @@ st.dataframe(table)
 
 st.markdown("---")
 st.image("assets/cat.webp")
+
+
+def checkbox_on_change():
+    print("Checkbox state changed!")
+
+
+state = st.checkbox("Check me out!", on_change=checkbox_on_change)
+if state:
+    st.write("Checkbox is checked!")
+else:
+    pass
+
+radio_btn = st.radio("Select an option:", options=("Option 1", "Option 2", "Option 3"))
+print(radio_btn)
+
+
+def btn_click():
+    print("Button clicked!")
+
+
+btn = st.button("Click Me!", on_click=btn_click)
+
+select = st.selectbox("Choose an option:", options=["Option A", "Option B", "Option C"])
+print(select)
+
+multi_select = st.multiselect(
+    "Select multiple options:", options=["Option X", "Option Y", "Option Z"]
+)
+st.write(multi_select)
